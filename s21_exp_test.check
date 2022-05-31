@@ -1,0 +1,76 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include "s21_math.h"
+
+#test s21_exp_0
+double x = 0;
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_1
+double x = 1;
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_2
+double x = 2;
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_3
+double x = 3;
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_4
+double x = 1.5;
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_5
+double x = -1.5;
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_6
+double x = 0.5;
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_7
+double x = -0.5;
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_8
+double x = 715;
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_9
+double x = -715;
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_10
+double x = -0;
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_11
+double x = 'A';
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_12
+double x = -'N';
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_13
+double x = - 'V';
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_14
+double x = + 'B';
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_15
+double x = 0 / 1;
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_16
+double x = 0 / 1;
+ck_assert_int_eq(s21_exp(x), exp(x));
+
+#test s21_exp_16
+double x = 0 / 1;
+ck_assert_int_eq(s21_exp(x), exp(x));
